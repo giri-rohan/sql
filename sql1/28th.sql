@@ -1,0 +1,4 @@
+-- 28)WAQTD NAME AND SALARY OF ALL THE EMPLOYEES 
+-- IF THEIR ANNUAL SALARY ENDS WITH  ‘0’ .  
+
+SELECT ename, sal FROM scott_db.emp WHERE (sal * 12) % 10 = 0;

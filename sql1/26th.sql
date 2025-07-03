@@ -1,0 +1,5 @@
+-- 26)LIST ALL THE EMPLOYEE NAMES AND  
+-- COMISSION FOR THOSE EMPLOYEES WHO EARN 
+-- COMISSION MORE THAN THEIR SALARY
+
+select ename,comm from scott_db.emp where (comm > sal);
