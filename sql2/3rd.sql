@@ -1,0 +1,6 @@
+-- 3. WRITE A QUERY TO DISPLAY THE DEPARTMENT NUMBER WHICH HAS MORE 
+-- THAN 2 EMPLOYEES AND THE TOTAL AMOUNT REQUIRED TO PAY THE MONTHLY
+--  SALARIES OF ALL THE EMPLOYEES IN THAT DEPARTMENT SHOULD BE MORE 
+-- THAN 9000. 
+
+select count(empno),deptno,sum(sal) from scott_db.emp group by deptno having count(empno)>2 and sum(sal)>9000; 
